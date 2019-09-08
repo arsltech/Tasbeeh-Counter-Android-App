@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    tools:context=".zika_counter"
+    android:background="@drawable/tempbackground">
+
+    <TextView
+        android:id="@+id/display"
+        android:layout_width="250dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="80dp"
+        android:layout_centerHorizontal="true"
+        android:textSize="60sp"
+        android:gravity="center"
+        android:text="0"
+        android:background="@drawable/border"
+        android:textColor="#ececec"
+
+        />
+    <TextView
+       android:id="@+id/textTotal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/display"
+        android:layout_centerHorizontal="true"
+        android:textSize="30sp"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:text="0"
+
+        android:textColor="#ececec"
+
+        />
+
+
+    <Button
+        android:id="@+id/btn_add"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:background="@drawable/button"
+        android:layout_below="@+id/display"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="90dp"
+        android:onClick="btnAction"
+        />
+    <com.google.android.gms.ads.AdView
+        xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/adView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        ads:adSize="SMART_BANNER"
+        ads:adUnitId="ca-app-pub-8863088720647115/6020809257">
+    </com.google.android.gms.ads.AdView>
+    <com.github.clans.fab.FloatingActionMenu
+        android:id="@+id/material_design_android_floating_action_menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="42dp"
+        android:layout_marginLeft="11dp"
+        android:layout_marginRight="0dp"
+        fab:menu_animationDelayPerItem="55"
+        fab:menu_backgroundColor="@android:color/transparent"
+        fab:menu_buttonSpacing="0dp"
+
+        fab:menu_colorNormal="#f9f9f9"
+        fab:menu_colorPressed="#f9f9f9"
+        fab:menu_colorRipple="#99d4d4d4"
+        fab:menu_fab_label="Tasbeeh Counter"
+        fab:menu_fab_size="normal"
+        fab:menu_icon="@drawable/ic_add_black_24dp"
+        fab:menu_labels_colorNormal="#333"
+        fab:menu_labels_colorPressed="#444"
+        fab:menu_labels_colorRipple="#66efecec"
+        fab:menu_labels_cornerRadius="3dp"
+        fab:menu_labels_ellipsize="none"
+        fab:menu_labels_hideAnimation="@anim/fab_slide_out_to_right"
+        fab:menu_labels_margin="0dp"
+        fab:menu_labels_maxLines="-1"
+        fab:menu_labels_padding="8dp"
+        fab:menu_labels_position="left"
+        fab:menu_labels_showAnimation="@anim/fab_slide_in_from_right"
+        fab:menu_labels_showShadow="true"
+        fab:menu_labels_singleLine="false"
+        fab:menu_labels_textColor="#f2f1f1"
+        fab:menu_labels_textSize="15sp"
+        fab:menu_openDirection="up"
+        fab:menu_shadowColor="#66aff198"
+        fab:menu_shadowRadius="4dp"
+        fab:menu_shadowXOffset="1dp"
+        fab:menu_shadowYOffset="4dp"
+        fab:menu_showShadow="true">
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/material_design_floating_action_menu_item1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            fab:fab_label="Mute"
+            fab:menu_colorNormal="#f9f9f9"
+            android:src="@drawable/ic_volume_up_black_24dp"
+            fab:menu_colorPressed="#f9f9f9"
+            fab:fab_size="mini" />
+    </com.github.clans.fab.FloatingActionMenu>
+</RelativeLayout>

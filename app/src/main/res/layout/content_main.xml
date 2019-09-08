@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".MainActivity"
+    android:background="@drawable/tempbackground"
+    tools:showIn="@layout/app_bar_main">
+
+    <TextView
+        android:id="@+id/display"
+        android:layout_width="250dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="55dp"
+        android:layout_centerHorizontal="true"
+        android:textSize="60sp"
+        android:gravity="center"
+        android:text="0"
+        android:textColor="#ececec"
+    android:background="@drawable/border"
+        />
+
+    <include
+        layout="@layout/material_design_floating_action_menu"
+
+        />
+
+    <Button
+        android:id="@+id/btn_add"
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:background="@drawable/button"
+        android:layout_below="@+id/display"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="70dp"
+        android:onClick="btnAction"
+        />
+
+    <com.google.android.gms.ads.AdView
+        xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/adView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        ads:adSize="SMART_BANNER"
+        ads:adUnitId="ca-app-pub-8863088720647115/6020809257">
+    </com.google.android.gms.ads.AdView>
+
+
+</RelativeLayout>

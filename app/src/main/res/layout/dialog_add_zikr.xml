@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:padding="15dp"
+
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/txt_titleDialog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add Zikr"
+        android:textAlignment="center"
+        android:textSize="22sp"
+
+        />
+    <EditText
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Zikr Name"
+        android:layout_marginTop="10dp"
+        android:maxLength="25"
+        android:id="@+id/txt_zikrName"
+        android:textSize="18sp"
+
+        />
+    <EditText
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Total Counter"
+        android:layout_marginTop="5dp"
+        android:id="@+id/txt_counter"
+        android:inputType="number"
+        android:maxLength="7"
+        android:textSize="18sp"
+
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_marginTop="15dp"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            android:textColor="#ffffff"
+            android:text="Cancel"
+            android:id="@+id/btn_cancel"
+            android:layout_weight="1"
+            android:textSize="16sp"
+            android:layout_marginRight="10dp"
+
+            />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            android:textColor="#ffffff"
+            android:text="Add"
+            android:textSize="16sp"
+            android:id="@+id/btn_add"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+
+            />
+
+    </LinearLayout>
+
+
+</LinearLayout>
